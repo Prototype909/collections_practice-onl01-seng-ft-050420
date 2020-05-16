@@ -1,3 +1,4 @@
+require "pry"
 def sort_array_asc(array)
   array.sort do |a, b|
     if a == b
@@ -56,7 +57,8 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.inject do |sum, num|
+    array.inject do |sum, num|
+      binding.pry
     sum + num
   end
 end
